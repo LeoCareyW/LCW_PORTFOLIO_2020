@@ -1,1 +1,210 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+$openSans: 'Open Sans', Helvetica, Arial, sans-serif;
+body {
+  background: #15181A;
+  font-family: $openSans;
+}
+
+.skw-pages {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+$skewDeg: 18deg;
+$magicVH: 32.4vh; // this number is magic and depends on skew angle
+$scrollTime: 1s;
+
+.skw-page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  &__half {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    transition: transform $scrollTime;
+
+    &--left {
+      left: 0;
+      transform: translate3d(-$magicVH, 100%, 0);
+        }
+
+    &--right {
+      left: 50%;
+      transform: translate3d($magicVH, -100%, 0);
+    }
+
+    .skw-page.active & {
+      transform: translate3d(0,0,0);
+    }
+  }
+
+  &__skewed {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 140%;
+    height: 100%;
+    transform: skewX($skewDeg * -1);
+    background: #000;
+
+    .skw-page__half--left & {
+      left: -40%;
+    }
+    .skw-page__half--right & {
+      right: -40%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 30%;
+    color: #fff;
+    transform: skewX($skewDeg);
+    transition: transform $scrollTime, opacity $scrollTime;
+    background-size: cover;
+
+    .skw-page__half--left & {
+      padding-left: 30%;
+      padding-right: 30%;
+      transform-origin: 100% 0;
+    }
+    .skw-page__half--right & {
+      padding-left: 30%;
+      padding-right: 30%;
+      transform-origin: 0 100%;
+    }
+
+    .skw-page.inactive & {
+      opacity: 0.5;
+      transform: skewX($skewDeg) scale(0.95);
+    }
+  }
+
+  &__heading {
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  &__description {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__link {
+    color: #FFA0A0;
+  }
+
+  &-1 {
+    .skw-page__half--left .skw-page__content {
+      background-image: url('https://www.colorhexa.com/70c3df.png');
+    }
+    .skw-page__half--right .skw-page__content {
+      background: lighten(#1C1C1C, 5%);
+    }
+  }
+  &-2 {
+    .skw-page__half--left .skw-page__content {
+      background: lighten(#1C1C1C, 5%);
+    }
+    .skw-page__half--right .skw-page__content {
+      background-image: url('https://www.colorhexa.com/ff6792.png');
+    }
+  }
+  &-3 {
+    .skw-page__half--left .skw-page__content {
+      background-image: url('https://plchldr.co/i/336x280?&bg=72c835&text=');
+    }
+    .skw-page__half--right .skw-page__content {
+      background: lighten(#1C1C1C, 5%);
+    }
+  }
+  &-4 {
+    .skw-page__half--left .skw-page__content {
+      background: lighten(#1C1C1C, 5%);
+    }
+    .skw-page__half--right .skw-page__content {
+      background-image: url('https://www.colorhexa.com/ffc300.png');
+    }
+  }
+  &-5 {
+    .skw-page__half--left .skw-page__content {
+      background-image: url('https://www.htmlcsscolor.com/preview/gallery/D3E9FF.png');
+    }
+    .skw-page__half--right .skw-page__content {
+      background: lighten(#1C1C1C, 5%);
+    }
+  }
+}
+
+.socialite-photo-1 {
+  img {
+    position: absolute;
+    bottom: 49px;
+    right: 137px;
+  }
+}
+
+  .socialite-photo-2 {
+  img {
+    position: absolute;
+    top: 30px;
+    right: 180px;
+  }
+}
+
+.airbnb-photo-1 {
+  img {
+    position: absolute;
+    top: 30px;
+    left: 180px;
+  }
+}
+
+
+.logo {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  letter-spacing: 12px;
+  a {
+    font-size: 35px;
+    color: #33C2E0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Specific CSS for your home-page
