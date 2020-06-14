@@ -67,7 +67,7 @@ $scrollTime: 1s;
   &__content {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-flow: column wrap;
     position: absolute;
     left: 0;
@@ -79,6 +79,14 @@ $scrollTime: 1s;
     transform: skewX($skewDeg);
     transition: transform $scrollTime, opacity $scrollTime;
     background-size: cover;
+
+    #skw-page-home {
+      justify-content: center;
+    }
+
+    .home-cluster {
+      margin-bottom: 100px;
+    }
 
     .skw-page__half--left & {
       padding-left: 30%;
@@ -114,7 +122,7 @@ $scrollTime: 1s;
 
   &-1 {
     .skw-page__half--left .skw-page__content {
-      background-image: url('https://www.colorhexa.com/70c3df.png');
+      background-image: url('https://wallpapercave.com/wp/wp3249029.jpg');
     }
     .skw-page__half--right .skw-page__content {
       background: lighten(#1C1C1C, 5%);
@@ -141,12 +149,12 @@ $scrollTime: 1s;
       background: lighten(#1C1C1C, 5%);
     }
     .skw-page__half--right .skw-page__content {
-      background-image: url('https://www.colorhexa.com/ffc300.png');
+      background-image: url('https://www.htmlcsscolor.com/preview/gallery/D3E9FF.png');
     }
   }
   &-5 {
     .skw-page__half--left .skw-page__content {
-      background-image: url('https://www.htmlcsscolor.com/preview/gallery/D3E9FF.png');
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/50/Black_colour.jpg');
     }
     .skw-page__half--right .skw-page__content {
       background: lighten(#1C1C1C, 5%);
@@ -213,7 +221,7 @@ $scrollTime: 1s;
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: 30px;
+  top: 450px;
   a {
     font-size: 45px;
     color: #33C2E0;
