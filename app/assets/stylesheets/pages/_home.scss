@@ -67,7 +67,7 @@ $scrollTime: 1s;
   &__content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-flow: column wrap;
     position: absolute;
     left: 0;
@@ -98,9 +98,9 @@ $scrollTime: 1s;
   }
 
   &__heading {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     font-size: 25px;
-    text-align: center;
+    // margin-top: -200px;
   }
 
   &__description {
@@ -159,6 +159,7 @@ $scrollTime: 1s;
     position: absolute;
     bottom: 49px;
     right: 137px;
+    // box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -167,6 +168,7 @@ $scrollTime: 1s;
     position: absolute;
     top: 30px;
     right: 180px;
+    // box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -178,28 +180,120 @@ $scrollTime: 1s;
   }
 }
 
-
-.logo {
-  display: flex;
-  position: absolute;
-  bottom: 30px;
-  letter-spacing: 12px;
-  a {
-    font-size: 35px;
-    color: #33C2E0;
+.airbnb-photo-2 {
+  img {
+    position: absolute;
+    bottom: 49px;
+    left: 220px;
   }
 }
 
 
+#main-heading {
+  margin-left: 50px;
+  display: inline-block
+}
 
+#main-heading-2 {
+  margin-left: 25px;
+  margin-bottom: 35vh;
+  display: inline-block
+}
 
+.leophoto {
+  img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
 
+.logo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 30px;
+  a {
+    font-size: 45px;
+    color: #33C2E0;
+    letter-spacing: 12px;
+  }
+  p{
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 12px;
+  }
+}
 
+.logo-child-1 {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+}
 
+.logo-child-2 {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  margin-left: -25px;
+}
 
+.logo-child-3 {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  margin-left: -50px;
+}
 
+.fa-spotify {
+  color: #1ED760;
+  transition: .2s;
+  -webkit-animation: fadein 5s;
+}
 
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
+.fa-spotify:hover {
+  font-size: 51px;
+  letter-spacing: 6px;
+}
+
+.fa-github {
+  color: #8390A7;
+  transition: .2s;
+  -webkit-animation: fadein 6s;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fa-github:hover {
+  font-size: 51px;
+  letter-spacing: 6px;
+}
+
+.fa-linkedin-in {
+  color: white;
+  transition: .2s;
+  -webkit-animation: fadein 7s;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fa-linkedin-in:hover {
+  font-size: 51px;
+  letter-spacing: 7px;
+}
 
 
 
