@@ -165,8 +165,11 @@ $scrollTime: 1s;
 .socialite-photo-1 {
   img {
     position: absolute;
-    bottom: 49px;
-    right: 137px;
+    bottom: 8%;
+    right: 15%;
+    width: 73%;
+    height: 53%;
+    object-fit: cover;
     // box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
   }
 }
@@ -174,8 +177,11 @@ $scrollTime: 1s;
   .socialite-photo-2 {
   img {
     position: absolute;
-    top: 30px;
-    right: 180px;
+    top: 3%;
+    right: 20%;
+    width: 45%;
+    height: 33%;
+    object-fit: cover;
     // box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
   }
 }
@@ -183,8 +189,11 @@ $scrollTime: 1s;
 .airbnb-photo-1 {
   img {
     position: absolute;
-    top: 30px;
-    left: 180px;
+    top: 5%;
+    left: 17%;
+    width: 73%;
+    height: 53%;
+    object-fit: cover;
   }
 }
 
@@ -193,6 +202,9 @@ $scrollTime: 1s;
     position: absolute;
     bottom: 49px;
     left: 220px;
+    width: 47%;
+    height: 33%;
+    object-fit: cover;
   }
 }
 
@@ -303,10 +315,114 @@ $scrollTime: 1s;
   letter-spacing: 7px;
 }
 
+.home-cluster-phone {
+  display: none;
+}
 
+.info-cluster-home {
+  display: none;
+}
 
+.scroll-down-phone {
+  display: none;
+}
 
+@media (min-width: 2880 ) {
 
+  .leophoto img {
+    height: 400px;
+    width: 400px;
+  }
 
+  .logo p  {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+.skw-page__half--left .skw-page__skewed {
+  // left: -70%
+  }
+
+.skw-page__half--right {
+  // left: 65%
+  }
+
+  .skw-page__skewed {
+  overflow: inherit;
+  }
+
+  .skw-page-1 .skw-page__half--left .skw-page__content {
+   background-image: none;
+  }
+
+  .skw-page__half--right .skw-page__content {
+    align-content: center;
+  }
+
+  .leophoto {
+    display: flex;
+    justify-content: center;
+    margin-top: -400%;
+  }
+
+  .leophoto img {
+    height: 100%;
+    width: 140%;
+  }
+
+  .skw-page__description {
+    font-size: 10px
+  }
+
+  .logo {
+    top: 42%;
+    width: 120%;
+  }
+
+  .logo-child-2 {
+    margin-left: 0px;
+  }
+
+  .logo-child-3 {
+    margin-left: 0px;
+  }
+
+  .home-cluster-phone {
+    display: inline-block;
+    width: 150%;
+    margin-top: 10%;
+  }
+
+  .scroll-big {
+    display: none;
+  }
+
+  .home-cluster-phone {
+    h1 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  .info-cluster-home {
+    display: inline-block;
+    margin-top: 8%;
+    text-align: center;
+    padding: 5%;
+    h5 {
+      font-size: 15px;
+    }
+  }
+
+  .scroll-down-phone {
+    display: inline-block;
+    margin-top: 5%;
+  }
+}
 
 // Specific CSS for your home-page
