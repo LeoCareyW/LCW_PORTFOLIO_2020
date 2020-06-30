@@ -270,7 +270,7 @@ $scrollTime: 1s;
 .fa-spotify {
   color: #1ED760;
   transition: .2s;
-  -webkit-animation: fadein 5s;
+  -webkit-animation: fadein 2s;
 }
 
 @-webkit-keyframes fadein {
@@ -286,7 +286,7 @@ $scrollTime: 1s;
 .fa-github {
   color: #8390A7;
   transition: .2s;
-  -webkit-animation: fadein 6s;
+  -webkit-animation: fadein 2s;
 }
 
 @-webkit-keyframes fadein {
@@ -302,7 +302,7 @@ $scrollTime: 1s;
 .fa-linkedin-in {
   color: white;
   transition: .2s;
-  -webkit-animation: fadein 7s;
+  -webkit-animation: fadein 2s;
 }
 
 @-webkit-keyframes fadein {
@@ -327,6 +327,22 @@ $scrollTime: 1s;
   display: none;
 }
 
+.phone-socialite-desc {
+  display: none;
+}
+
+.airbnb-photo-1-ph {
+  img {
+    display: none;
+  }
+}
+
+.airbnb-photo-2-ph {
+  img {
+  display: none;
+  }
+}
+
 @media (min-width: 2880 ) {
 
   .leophoto img {
@@ -341,13 +357,27 @@ $scrollTime: 1s;
 
 @media only screen and (max-width: 600px) {
 
-.skw-page__half--left .skw-page__skewed {
-  // left: -70%
-  }
+.airbnb-photo-1-ph {
+    img {
+    display: inline-block;
+    position: absolute;
+    bottom: 24%;
+    left: -19%;
+    width: 115%;
+    height: 22%;
+    }
+}
 
-.skw-page__half--right {
-  // left: 65%
-  }
+.airbnb-photo-2-ph {
+    img {
+    display: inline-block;
+    position: absolute;
+    top: 79%;
+    left: 18%;
+    width: 102%;
+    height: 19%
+    }
+}
 
   .skw-page__skewed {
   overflow: inherit;
@@ -423,6 +453,38 @@ $scrollTime: 1s;
     display: inline-block;
     margin-top: 5%;
   }
+
+  .phone-socialite-desc {
+    h2 {
+      margin-left: -23%
+    }
+    display: inline-block;
+    width: 240%;
+    margin-top: -260%;
+    text-align: center;
+  }
+
+  .socialite-photo-1 img {
+    width: 110%;
+    height: 20%;
+    bottom: 18%;
+    right: 18%;
+  }
+
+  .socialite-photo-2 img {
+    top: 83%;
+    right: -20%;
+    width: 78%;
+    height: 15%;
+  }
+
+  .phone-title-2 {
+    text-align: center;
+    margin-top: -435%;
+    margin-left: 6%;
+    width: 235%;
+  }
 }
+
 
 // Specific CSS for your home-page
