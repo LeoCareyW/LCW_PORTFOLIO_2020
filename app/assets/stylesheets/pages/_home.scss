@@ -337,6 +337,10 @@ $scrollTime: 1s;
   }
 }
 
+.phone-title-3 {
+  display: none;
+  }
+
 .airbnb-photo-2-ph {
   img {
   display: none;
@@ -468,7 +472,7 @@ $scrollTime: 1s;
     width: 110%;
     height: 20%;
     bottom: 18%;
-    right: 18%;
+    right: 14%;
   }
 
   .socialite-photo-2 img {
@@ -483,6 +487,21 @@ $scrollTime: 1s;
     margin-top: -435%;
     margin-left: 6%;
     width: 235%;
+  }
+
+  .phone-title-3 {
+    display: inline-block;
+    text-align: center;
+    margin-top: -350%;
+    margin-left: 6%;
+    width: 235%;
+      h2 {
+        color: #292929
+      }
+
+      p {
+        color: #292929
+      }
   }
 }
 
