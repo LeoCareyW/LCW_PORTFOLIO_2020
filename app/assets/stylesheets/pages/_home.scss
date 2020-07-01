@@ -222,8 +222,9 @@ $scrollTime: 1s;
 
 .leophoto {
   img {
-    height: 250px;
-    width: 250px;
+    height: 100%;
+    width: 78%;
+    margin-left: 13%;
     border-radius: 50%;
     overflow: hidden;
   }
