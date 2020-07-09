@@ -74,8 +74,8 @@ $(document).ready(function() {
     }
   });
 
-  $(document).on('touchmove', function(e) {
-    if (scrolling) return;
+  $(document).on("touchmove", function(e) {
+   if (scrolling) return;
     if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
       navigateUp();
     } else {
