@@ -74,6 +74,15 @@ $(document).ready(function() {
     }
   });
 
+  $(document).on('touchmove', function(e) {
+    if (scrolling) return;
+    if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+      navigateUp();
+    } else {
+      navigateDown();
+    }
+  });
+
   $(document).on("keydown", function(e) {
     if (scrolling) return;
     if (e.which === 38) {
