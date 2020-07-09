@@ -467,7 +467,7 @@ $scrollTime: 1s;
     }
     display: inline-block;
     width: 240%;
-    margin-top: -260%;
+    margin-top: -215%;
     text-align: center;
   }
 
@@ -494,12 +494,13 @@ $scrollTime: 1s;
 
   .phone-title-2 {
     text-align: center;
+    margin-top: -302px;
   }
 
   .phone-title-3 {
     display: inline-block;
     text-align: center;
-    margin-top: -350%;
+    margin-top: -259%;
     margin-left: 6%;
     width: 235%;
       h2 {
@@ -509,6 +510,10 @@ $scrollTime: 1s;
       p {
         color: #292929
       }
+  }
+
+  .psl-desc {
+    margin-top: -30px;
   }
 }
 
