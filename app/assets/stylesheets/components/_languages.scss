@@ -1,0 +1,17 @@
+.languages {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6vh;
+  max-height: 200px;
+  max-width: 400px;
+}
+
+.languages__row {
+  display: flex;
+  flex-direction: row;
+  img {
+    margin: 1.5vh 1vw;
+    height: 50px;
+    width: 50px;
+  }
+}
