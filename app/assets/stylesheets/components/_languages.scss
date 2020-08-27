@@ -15,3 +15,8 @@
     width: 50px;
   }
 }
+
+.languages__row__2 {
+  @extend .languages__row;
+  margin-right: 5px;
+}
