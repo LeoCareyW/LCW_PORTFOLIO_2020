@@ -150,7 +150,7 @@ $scrollTime: 1s;
        background-image: url('https://i.gifer.com/1AY3.gif');
     }
     .skw-page__half--right .skw-page__content {
-      background: #B29DD9;
+      background: #66E2DA;
     }
   }
   &-5 {
@@ -159,6 +159,14 @@ $scrollTime: 1s;
     }
     .skw-page__half--right .skw-page__content {
       background-image: url('https://media2.giphy.com/media/3o7TKAssvNMSUx986A/source.gif');
+    }
+  }
+  &-6 {
+    .skw-page__half--left .skw-page__content {
+       background-image: url('https://i.gifer.com/1AY3.gif');
+    }
+    .skw-page__half--right .skw-page__content {
+      background: #B29DD9;
     }
   }
 }
