@@ -376,6 +376,13 @@ $scrollTime: 1s;
   }
 }
 
+@media only screen and (max-width: 975px) {
+
+  .skw-page__description {
+    font-size: 15px
+  }
+}
+
 @media only screen and (max-width: 600px) {
 
 .airbnb-photo-1-ph {

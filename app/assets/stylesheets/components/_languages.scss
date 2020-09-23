@@ -27,3 +27,24 @@
   }
 }
 
+@media (max-height: 620px) {
+
+.languages__row {
+  display: none
+  }
+
+.languages__row__2 {
+  display: none
+  }
+}
+
+@media (max-width: 1310px) {
+
+  .languages__row {
+    display: none
+    }
+
+  .languages__row__2 {
+    display: none
+    }
+  }
